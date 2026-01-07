@@ -185,8 +185,6 @@ public class PongManager : MonoBehaviour
             StartIngition = false;
             RespawnTimer = 0;
             Sphere.gameObject.GetComponent<TrailRenderer>().enabled = true;
-        }
-
-        
+        }  
     }
 }

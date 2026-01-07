@@ -17,6 +17,16 @@ public class MenuScript : MonoBehaviour
         Application.Quit();
     }
 
+    public void ExitToMenu()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+    }
+
+    public void InvokeExitToMenu()
+    {
+        Invoke("ExitToMenu", 0.5f);
+    }
+
 
 
 }

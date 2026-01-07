@@ -3,7 +3,8 @@ using TMPro;
 
 public class StartScript : MonoBehaviour
 {
-    [SerializeField] public TextMeshProUGUI StartText;
+    [SerializeField] TextMeshProUGUI StartText;
+    [SerializeField] GameObject GameManager;
 
     void Start()
     {
@@ -24,11 +25,12 @@ public class StartScript : MonoBehaviour
     public void DisableStartText()
     {
         StartText.enabled = false;
+        GameManager.gameObject.SetActive(true);
     }
 
     public void EnableStartText()
     {
         StartText.text = "GO!";
-        StartText.fontSize = 110;
+        StartText.fontSize = 100;
     }
 }

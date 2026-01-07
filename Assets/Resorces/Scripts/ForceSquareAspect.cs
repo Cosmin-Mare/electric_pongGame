@@ -29,4 +29,4 @@ public class ForceSquareAspect : MonoBehaviour
             camera.rect = rect;
         }
     }
-}
+}   
